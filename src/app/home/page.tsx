@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Carousel, Embla } from '@mantine/carousel';
 import { Progress } from '@mantine/core';
-import { TitleTextMain, TitleTextBig, TitleUnderLogo,ButtonContainer, TitleTextMedium, BoxRowBgColor,ButtonTextMain } from "@/components/Styled";
+import { TitleTextMain, TitleTextBig, TitleUnderLogo,ButtonContainer, TitleTextMedium, BoxRowBgColor,ButtonTextMain, TitleUnderLogo2 } from "@/components/Styled";
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
 
 
@@ -59,8 +59,9 @@ const HomePage = () => {
       <Container>
         <Row className="mt-5 align-items-center">
           <Col lg={3} className='mb-3 mb-md-0'>
-            <TitleTextMain>TÊN DỰ ÁN</TitleTextMain>
-            <TitleUnderLogo>Dữ liệu hiện đang được cập nhật!</TitleUnderLogo>
+            <TitleTextMain>FOR_MOBILITY</TitleTextMain>
+            <TitleTextMain>Giao thông tương lai</TitleTextMain>
+            <TitleUnderLogo2>Mô hình và giải pháp cho phát triển đô thị hiện đại</TitleUnderLogo2>
           </Col>
           <Col>
             <Carousel
@@ -96,12 +97,10 @@ const HomePage = () => {
         <Row className="mt-5 align-items-center flex-row-reverse">
           <Col lg={3} className="mb-3 mb-md-0 text-center">
             <ButtonContainer>
-              <ButtonTextMain onClick={handleClick1}>Data 1</ButtonTextMain>
-              <ButtonTextMain onClick={handleClick2}>Data 2</ButtonTextMain>
-              <ButtonTextMain onClick={handleClick3}>Data 3</ButtonTextMain>
+              <ButtonTextMain onClick={handleClick1}>Kịch bản cơ sở    </ButtonTextMain>
+              <ButtonTextMain onClick={handleClick2}>Kịch bản thu phí 1</ButtonTextMain>
+              <ButtonTextMain onClick={handleClick3}>Kịch bản thu phí 2</ButtonTextMain>
             </ButtonContainer>
-              <TitleTextMain>TÌNH TRẠNG GIAO THÔNG</TitleTextMain>
-              <TitleUnderLogo>Dữ liệu hiện đang được cập nhật!</TitleUnderLogo>
           </Col>
           <Col>
             <iframe src="https://www.google.com/maps/d/embed?mid=1j-8WUA4keQDaeJOuyD0zwJsRa3A&hl=en&ehbc=2E312F" width="100%" height="480"></iframe>

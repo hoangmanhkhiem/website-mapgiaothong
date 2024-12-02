@@ -111,6 +111,8 @@ export const TitleTextMain = styled.div`
 export const ButtonTextMain = styled.button`
   font-size: 16px;
   font-weight: 600;
+  height: 40px;
+  width: 350px;
   color: ${darkTheme.Black80};
   background-color: transparent;
   border: 1px solid ${darkTheme.Black80};
@@ -178,6 +180,11 @@ export const TitleLogo = styled.div`
 `;
 export const TitleUnderLogo = styled.div`
   font-size: 10px;
+  color: #fbd534;
+`;
+
+export const TitleUnderLogo2 = styled.div`
+  font-size: 15px;
   color: #fbd534;
 `;
 
